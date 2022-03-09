@@ -80,4 +80,4 @@ const team = [
                                 <a href="#" class="btn btn-warning">My Profile</a>
                             </div>
                     </div>`;  
-            };
+         };
