@@ -53,4 +53,18 @@ const team = [
         console.warn(team[i]);
     }
     // Stampa direttamente l'intero Array [team]
-    console.log(team)
+    console.log(team); 
+
+    /**
+     * MILESTONE 2:
+            stampare le stesse informazioni su DOM sottoforma di stringhe
+     */ 
+        const content= document.getElementById("card");
+                for ( let i = 0 ; i < team.length; i ++){
+                    content.innerHTML += `
+                        <div class="col-2 primary">
+                            <h2>${team[i].name}</h2>
+                            <p>${team[i].role}</p>
+                            <p>${team[i].image}</p> 
+                        </div>`;  
+            };
