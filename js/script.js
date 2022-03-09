@@ -62,9 +62,9 @@ const team = [
         const content= document.getElementById("card");
                 for ( let i = 0 ; i < team.length; i ++){
                     content.innerHTML += `
-                        <div class="col-2 primary">
+                        <div class="col-2 primary m-5">
+                            <img src="img/${team[i].image}" alt=" Profile photo"></p> 
                             <h2>${team[i].name}</h2>
                             <p>${team[i].role}</p>
-                            <p>${team[i].image}</p> 
                         </div>`;  
             };
