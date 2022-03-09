@@ -59,12 +59,25 @@ const team = [
      * MILESTONE 2:
             stampare le stesse informazioni su DOM sottoforma di stringhe
      */ 
+    
+    /**
+     *  BONUS 1:
+            trasformare la stringa foto in una immagine effettiva
+     */
+    /**
+     * BONUS 2:
+            organizzare i singoli membri in card/schede
+     */
         const content= document.getElementById("card");
                 for ( let i = 0 ; i < team.length; i ++){
-                    content.innerHTML += `
-                        <div class="col-2 primary m-5">
-                            <img src="img/${team[i].image}" alt=" Profile photo"></p> 
-                            <h2>${team[i].name}</h2>
-                            <p>${team[i].role}</p>
-                        </div>`;  
+                    content.innerHTML += ` 
+                    <div class="card m-2" style="width: 18rem;">
+                        <img src="img/${team[i].image}" class="card-img-top" alt="...">
+                            <div class="card-body ">
+                                <h5 class="card-title mt-5">${team[i].name}</h5> 
+                                <h6 class="card-subtitle mb-2 text-muted">${team[i].role}</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-warning">My Profile</a>
+                            </div>
+                    </div>`;  
             };
